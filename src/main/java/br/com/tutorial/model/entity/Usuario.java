@@ -12,7 +12,6 @@ import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
-import br.com.tutorial.validator.Telefone;
 import br.com.tutorial.validator.UsuarioNaoCadastrado;
 
 @Entity
@@ -45,7 +44,6 @@ public class Usuario extends BaseEntity implements Serializable {
 	@Column(name = "nome")
 	private String nome;
 
-	@Telefone
 	@Column(name = "telefone")
 	private String telefone;
 

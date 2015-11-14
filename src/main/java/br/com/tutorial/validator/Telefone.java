@@ -11,7 +11,7 @@ import javax.validation.constraints.Pattern;
 
 @Documented
 @Target(ElementType.FIELD)
-@Constraint(validatedBy = {})
+//@Constraint(validatedBy = {})
 @Retention(RetentionPolicy.RUNTIME)
 @Pattern(regexp="^(\\+\\d)*\\s*(\\(\\d{3}\\)\\s*)*\\d{3}(-{0,1}|\\s{0,1})\\d{2}(-{0,1}|\\s{0,1})\\d{2}$", message="Telefone Inválido")
 public @interface Telefone {
